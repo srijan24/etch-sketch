@@ -1,0 +1,22 @@
+
+
+#mainCanvas {
+    display: flex;
+    border: solid red;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    
+}
+
+.pixel {
+    border: 1px dashed black;
+}
+
+.pixel:hover {
+    background-color: gray;
+}
+.pixel-filled {
+    background-color: black;
+    z-index:10;
+}
