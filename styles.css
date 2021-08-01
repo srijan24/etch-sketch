@@ -2,7 +2,7 @@
 
 #mainCanvas {
     display: flex;
-    border: solid red;
+    border: solid rgba(0, 0, 0, 0.384);
     flex-direction: column;
     flex-wrap: wrap;
     align-items: stretch;
@@ -10,7 +10,8 @@
 }
 
 .pixel {
-    border: 1px dashed black;
+    margin: 0;
+    padding: 0;
 }
 
 .pixel:hover {

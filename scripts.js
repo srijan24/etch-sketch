@@ -12,13 +12,13 @@ container.style.cssText = `height:${canvasSide}px; width:${canvasSide}px;`;
 
 // let us add the div grids
 function fillCanvas(npixels = 16){
-    let pxheight = Math.floor((canvasSide+1) / (npixels+1));
-    let pxwidth = Math.floor((canvasSide+1) / (npixels+1));
+    let pxheight = (100 / npixels);
+    let pxwidth = (100 / npixels);
     for(let i=0; i<npixels*npixels; i++){
         let elt = document.createElement('div');
         elt.classList.add('pixel');
         elt.setAttribute('id',`pixel${i}`);
-        elt.style.cssText = `height:${pxheight}px;width:${pxwidth}px`;
+        elt.style.cssText = `height:${pxheight}%;width:${pxwidth}%`;
         container.appendChild(elt);
     }
 return ;
@@ -53,8 +53,6 @@ btn.addEventListener('click', () => {
 // change canvas function
 function canvasChange(e){
     
-    alert('This is NYI for now');
-    return;
 
     let npx = prompt("What size canvas (Enter N for NxN):");
     npx = parseInt(npx);
